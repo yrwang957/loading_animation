@@ -21,7 +21,7 @@ void print_progress(int percent)
     memset(bar + bar_soild, ' ', bar_void);
     bar[bar_len] = 0;
 
-    printf("Loading: [%*s] %3d%% %c\n",
+    printf("Loading: [%*s] %3d%% %c\r",
         bar_len, bar,
         percent,
         percent == 100 ? ' ' : spinning[spin_index]);
